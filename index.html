@@ -24,33 +24,33 @@
                     <td colspan="4"><input type="text" id="calc"></td>
                 </tr>
                 <tr>
-                    <td><input type="button" value="AC"></td>
-                    <td><input type="button" value="C"></td>
-                    <td><input type="button" value="+/-"></td>
-                    <td><input type="button" value="/"></td>
+                    <td><input type="button" value="AC" onclick="del()"></td>
+                    <td><input type="button" value="C" onclick="clr()"></td>
+                    <td><input type="button" value="+/-" onclick="num('-')"></td>
+                    <td><input type="button" value="/" onclick="num('/')"></td>
                 </tr>
                 <tr>
                     <td><input type="button" value="7" onclick="num('7')"></td>
                     <td><input type="button" value="8" onclick="num('8')"></td>
                     <td><input type="button" value="9" onclick="num('9')"></td>
-                    <td><input type="button" value="X"></td>
+                    <td><input type="button" value="*" onclick="num('*')"></td>
                 </tr>
                 <tr>
                     <td><input type="button" value="4" onclick="num('4')"></td>
                     <td><input type="button" value="5" onclick="num('5')"></td>
                     <td><input type="button" value="6" onclick="num('6')"></td>
-                    <td><input type="button" value="-"></td>
+                    <td><input type="button" value="-" onclick="num('-')"></td>
                 </tr>
                 <tr>
                     <td><input type="button" value="1" onclick="num('1')"></td>
                     <td><input type="button" value="2" onclick="num('2')"></td>
                     <td><input type="button" value="3" onclick="num('3')"></td>
-                    <td><input type="button" value="+"></td>
+                    <td><input type="button" value="+" onclick="num('+')"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="button" value="0" id="zero"></td>
-                    <td><input type="button" value="."></td>
-                    <td><input type="button" value="="></td>
+                    <td colspan="2"><input type="button" value="0" id="zero" onclick="num('0')"></td>
+                    <td><input type="button" value="." onclick="num('.')"></td>
+                    <td><input type="button" value="=" onclick="equal()"></td>
                 </tr>
             </table>
         </div>
